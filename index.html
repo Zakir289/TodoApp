@@ -1,0 +1,48 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="todo/todo.css">
+</head>
+<body>
+
+<header class="todo-header"><h1>Todo App</h1></header>
+<div class="container">
+    <div class="todo-bar">
+        <input type="text" class="todo-text" placeholder="What are you doing today?"/>
+        <input type="submit" class="todo-submit" value="ADD"/>
+    </div>
+    <div class="column-header">
+        <div>Todo</div>
+        <div>In Progess</div>
+        <div>Done</div>
+    </div>
+    <div class="todo-container">
+        <div id="todo" class="column">
+        </div>
+        <div class="seperator">
+        </div>
+        <div id="inProgress" class="column">
+        </div>
+        <div class="seperator">
+        </div>
+        <div id="done" class="column">
+        </div>
+    </div>
+
+    <div class="todo-edit-modal hide-element" id="edit-card-block">
+        <form id="edit-card">
+            <input type="text" class="edit-card-text" data-value="todo-edit-value"/>
+            <div class="action-btns">
+                <input type="submit" class="edit-card-submit" data-submit="todo-edit-submit" value="Submit"/>
+                <input type="button" class="edit-card-cancel" data-dismiss="todo-edit-modal" value="cancel"/>
+            </div>
+        </form>
+    </div>
+
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="todo/todo.js"></script>
+</body>
+
+</html>
